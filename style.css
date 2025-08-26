@@ -1,0 +1,157 @@
+/*--------------------------------------------------------------
+# General Text Colors
+--------------------------------------------------------------*/
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e; /* <-- Main text color for the whole site */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e1e1e; /* <-- Headings color */
+}
+
+a {
+  color: #1e1e1e; /* <-- Links default color */
+}
+
+a:hover {
+  color: #0078ff; /* <-- Links hover color */
+}
+
+.color-a {
+  color: #0078ff; /* <-- Accent blue text */
+}
+
+.color-d {
+  color: #f5f5f5; /* <-- Light (almost white) text */
+}
+
+.color-text-a {
+  color: #4e4e4e; /* <-- Gray text */
+}
+
+/*--------------------------------------------------------------
+# Hero Section Text Colors
+--------------------------------------------------------------*/
+.hero {
+  color: #fff; /* <-- Default text color in Hero section */
+}
+
+.hero .hero-title {
+  color: #fff; /* <-- Big name/title text */
+}
+
+.hero .hero-subtitle {
+  /* inherits white from .hero unless you set a new color */
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Navigation (Header) Text Colors
+--------------------------------------------------------------*/
+#header .logo a {
+  color: #fff; /* <-- Logo text */
+}
+
+.navbar a,
+.navbar a:focus {
+  color: #fff; /* <-- Menu links in navbar */
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #fff; /* <-- Menu links hover/active */
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.service-box .s-description {
+  color: #4e4e4e; /* <-- Service description text */
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.work-content .w-more {
+  color: #4e4e4e; /* <-- Portfolio item subtitle */
+}
+
+.work-content .w-more .w-ctegory {
+  color: #0078ff; /* <-- Portfolio category (blue) */
+}
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+.card-blog .card-description {
+  color: #4e4e4e; /* <-- Blog post description text */
+}
+
+.card-blog .post-date {
+  color: #4e4e4e; /* <-- Blog date text */
+}
+
+/*--------------------------------------------------------------
+# Footer Text Colors
+--------------------------------------------------------------*/
+footer {
+  color: #fff; /* <-- Footer text */
+}
+
+footer .credits a {
+  color: #fff; /* <-- Footer links */
+}
+/* Resume Card Styling */
+.resume-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.resume-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 350px; /* prevents image from getting too tall */
+}
+
+.resume-card .card-body {
+  padding: 1rem;
+}
+
+.resume-card .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Responsive tweaks for small devices */
+@media (max-width: 768px) {
+  .resume-card {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .resume-img {
+    max-height: 250px;
+  }
+  .resume-card .btn {
+    display: block;
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+}
+
